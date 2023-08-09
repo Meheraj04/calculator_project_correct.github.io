@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input id="display">
+        <div class="num">
+            <div class="left">
+                <button class="btn" id="b7" onclick="addToDisplay(7)">7</button><button class="btn" id="b8"
+                    onclick="addToDisplay(8)">8</button> <button class="btn" id="b9"
+                    onclick="addToDisplay(9)">9</button>
+                <button class="btn" id="b4" onclick="addToDisplay(4)">4</button><button class="btn" id="b5"
+                    onclick="addToDisplay(5)">5</button><button class="btn" id="b6" onclick="addToDisplay(6)">6</button>
+
+                <button class="btn" id="b1" onclick="addToDisplay(1)">1</button><button class="btn" id="b2"
+                    onclick="addToDisplay(2)">2</button><button class="btn" id="b3" onclick="addToDisplay(3)">3</button>
+                <button class="btn" id="b11" onclick="decimal()">.</button><button class="btn" id="b10"
+                    onclick="addToDisplay(0)">0</button><button class="btn" id="b12">+/-</button>
+            </div>
+            <div class="right">
+                <div class="r1">
+                    <button class="btn" id="b13" onclick="plus()">+</button>
+                    <button class="btn" id="b15" onclick="minus()">-</button>
+                    <button class="btn" id="b17" onclick="multiply()">*</button>
+                    <button class="btn" id="b19" onclick="divide()">/</button>
+                </div>
+                <div class="r2">
+                    <button class="btn" id="b14" onclick="clearDisplay()">AC</button><button class="btn"
+                        id="b16" onclick="clearOneDigit()">C</button><button class="btn" id="b18" onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
